@@ -1,12 +1,15 @@
 {
   inputs = {
     flatpaks.url = "github:GermanBread/declarative-flatpak/stable";
-    # Please DO NOT override the "nixpkgs" input!
-    # Overriding "nixpkgs" is unsupported unless stated otherwise.
+    home-manager = {
+      url = "github:nix-community/home-manager/release-23.05";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { flatpaks }: {
-    nixosConfigurations.<host> = nixpkgs.lib.nixosSystem {
+  outputs = { flatpaks, nixpkgs, ... }: {
+    nixosConfigurations."ShiroPC" = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
       modules = [
         flatpaks.nixosModules.default
 
