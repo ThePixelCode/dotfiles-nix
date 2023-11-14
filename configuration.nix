@@ -98,7 +98,7 @@
       };
     };
 
-    # run nix-env --delete-generations +5 to delete old generations and keep the 5 more recent
+    # run 'nix-env --delete-generations +5' to delete old generations and keep the 5 more recent
     systemd = {
       services.clean-old-nix-generations = {
         description = "Clean old nix generations";
@@ -193,8 +193,8 @@
 
     virtualisation.docker.enable = true;
 
-    fonts = with pkgs; {
-      fonts = with pkgs; [
+    fonts = {
+      packages = with pkgs; [
         (nerdfonts.override {
           fonts = [
             "VictorMono"
@@ -218,7 +218,7 @@
       htop
       wget
       zsh
-      exa
+      eza
       bat
       fzf
       gcc
