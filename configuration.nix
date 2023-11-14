@@ -7,8 +7,8 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      ./secrets.nix # Secrets that nobody should now
+      /etc/nixos/hardware-configuration.nix
+      /etc/nixos/secrets.nix # Secrets that nobody should now
     ];
 
   options.options = {
