@@ -87,7 +87,7 @@
       settings = {
         # Optimise store
         auto-optimise-store = true;
-	experimental-features = [ "nix-command" "flakes" ];
+        experimental-features = [ "nix-command" "flakes" ];
       };
       
       # Collect garbage older than 5 days
