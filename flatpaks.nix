@@ -6,7 +6,7 @@
     enable = true;
     deduplicate = true;
     packages = [
-      "flathub:apps/com.brave.Browser/x86_64/stable"
+      "flathub:app/com.brave.Browser/x86_64/stable"
     ];
   };
 }
