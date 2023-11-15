@@ -9,6 +9,7 @@
     [ # Include the results of the hardware scan.
       /etc/nixos/hardware-configuration.nix
       /etc/nixos/secrets.nix # Secrets that nobody should now
+      ./flatpaks.nix
     ];
 
   options.options = {
@@ -78,9 +79,6 @@
 
       # Enable CUPS to print documents.
       printing.enable = true;
-
-      # Flatpak
-      flatpak.enable = true;
     };
 
     nix = {
