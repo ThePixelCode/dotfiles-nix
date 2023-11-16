@@ -19,10 +19,7 @@
   #     xxx
   # '';
 
-  programs.git = {
-    enable = true;
-    userName = "ThePixelCode";
-  };
+  programs.git.enable = true;
 
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
