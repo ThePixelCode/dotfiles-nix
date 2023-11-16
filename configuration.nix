@@ -10,7 +10,6 @@
       /etc/nixos/hardware-configuration.nix
       /etc/nixos/secrets.nix # Secrets that nobody should now
       ./flatpaks.nix
-      ./home.nix
       ./zsh.nix
     ];
 
