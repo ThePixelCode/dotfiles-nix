@@ -14,6 +14,7 @@
       "flathub:app/com.ktechpit.whatsie/x86_64/stable"
       "flathub:app/com.ktechpit.torrhunt/x86_64/stable"
       "flathub:app/org.libreoffice.LibreOffice/x86_64/stable"
+      "flathub:app/org.fedoraproject.MediaWriter/x86_64/stable"
     ];
     remotes = {
       "flathub" = "https://dl.flathub.org/repo/flathub.flatpakrepo";
