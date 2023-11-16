@@ -7,7 +7,7 @@
     };
   };
 
-  outputs = { flatpaks, nixpkgs, ... }: {
+  outputs = inputs@{ flatpaks, nixpkgs, home-manager, ... }: {
     nixosConfigurations."ShiroPC" = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
