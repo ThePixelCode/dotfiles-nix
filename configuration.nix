@@ -142,24 +142,6 @@
       extraGroups = [ "networkmanager" "wheel" "docker" ];
       shell = pkgs.zsh;
       packages = with pkgs; [
-        alacritty
-        brave
-        firefox
-        kate
-        vscode
-        megasync
-        nextcloud-client
-        thunderbird
-        tldr
-        vlc
-        discord
-        appimage-run
-        libsForQt5.ark
-        libsForQt5.discover
-        libsForQt5.filelight
-        libsForQt5.kdeconnect-kde
-        libsForQt5.tokodon
-        libsForQt5.yakuake
         (let src = pkgs.fetchFromGitHub{
           owner = "ThePixelCode";
           repo = "nix-nwjs";
