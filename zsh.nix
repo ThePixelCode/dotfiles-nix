@@ -1,19 +1,27 @@
 { config, pkgs, ... }:
 
 {
+  options = {
+    programs.zsh = {
+      autocd = true;
+      enableFzfHistory = true;
+    };
+  };
   config = {
     programs.zsh = {
       enable = true;
-      oh-my-zsh = {
+      autosuggestions.enable = true;
+      syntaxHighlighting.enable = true;
+      ohMyZsh = {
         enable = true;
         plugins = [
           "git"
           "gitignore"
           "sudo"
-          "zsh-syntax-highlighting"
-          "zsh-autosuggestions"
-          "nix-zsh-completions"
-          "nix-shell"
+        ];
+        customPkgs = [
+          pkgs.nix-zsh-completions
+          pkgs.zsh-nix-shell
         ];
         theme = "powerlevel10k/powerlevel10k";
       };
