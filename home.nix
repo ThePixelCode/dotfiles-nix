@@ -24,7 +24,6 @@
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
     alacritty
-    brave
     firefox
     kate
     vscode
