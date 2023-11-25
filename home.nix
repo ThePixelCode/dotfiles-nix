@@ -32,7 +32,6 @@
     thunderbird
     tldr
     vlc
-    discord
     appimage-run
     libsForQt5.ark
     libsForQt5.discover
