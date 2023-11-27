@@ -25,6 +25,7 @@
   home.packages = with pkgs; [
     alacritty
     appimage-run
+    distrobox
     firefox
     kate
     megasync
