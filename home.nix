@@ -24,15 +24,15 @@
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
     alacritty
+    appimage-run
     firefox
     kate
-    vscode
     megasync
     nextcloud-client
     thunderbird
     tldr
     vlc
-    appimage-run
+    vscode
     libsForQt5.ark
     libsForQt5.discover
     libsForQt5.filelight
