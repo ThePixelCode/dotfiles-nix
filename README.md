@@ -19,5 +19,5 @@ Moved dotfiles to be nixos only
 	};
 }
 ```
-5. run `sudo nixos-rebuild switch --impure --flake /path/to/cloned/repo#ShiroPC`
+5. run `sudo nixos-rebuild switch --impure --flake /path/to/cloned/repo?submodules=1#ShiroPC`
 Make sure you add `--impure` flag on the args
