@@ -203,9 +203,6 @@
       eza
       bat
       fzf
-      gcc
-      rustup
-      nodejs_18
       python311
       libsForQt5.xdg-desktop-portal-kde
       libsForQt5.systemsettings
