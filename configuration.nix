@@ -203,6 +203,7 @@
       eza
       bat
       fzf
+      neofetch
       python311
       libsForQt5.xdg-desktop-portal-kde
       libsForQt5.systemsettings
