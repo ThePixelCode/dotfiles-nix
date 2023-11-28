@@ -22,6 +22,12 @@
         customPkgs = [
           pkgs.nix-zsh-completions
           pkgs.zsh-nix-shell
+          (let src = pkgs.fetchFromGitHub{
+            owner = "ThePixelCode";
+            repo = "oh-my-zsh-powerlevel10k-nix";
+            rev = "main";
+            sha256 = "sha256-iNdM0gdjlvX2Vsh6MfwAgXZ9LOfYLMI1XiTQnvl8KIE=";
+          }; in pkgs.callPackage "${src}/default.nix" {})
         ];
         theme = "powerlevel10k/powerlevel10k";
       };
