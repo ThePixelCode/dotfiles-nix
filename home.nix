@@ -33,7 +33,6 @@
     thunderbird
     tldr
     vlc
-    vscode
     libsForQt5.ark
     libsForQt5.discover
     libsForQt5.filelight
