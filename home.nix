@@ -39,7 +39,7 @@
     libsForQt5.kdeconnect-kde
     libsForQt5.tokodon
     libsForQt5.yakuake
-  ];
+  ] ++ import ./pentesting.nix pkgs;
 
   # # starship - an customizable prompt for any shell
   # programs.starship = {
