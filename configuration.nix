@@ -76,6 +76,10 @@
         desktopManager.plasma5.enable = true;
       };
 
+      openssh = {
+        enable = true;
+      };
+
       packagekit.enable = true;
 
       # Enable CUPS to print documents.
@@ -143,12 +147,7 @@
       extraGroups = [ "networkmanager" "wheel" "docker" ];
       shell = pkgs.zsh;
       packages = with pkgs; [
-        (let src = pkgs.fetchFromGitHub{
-          owner = "ThePixelCode";
-          repo = "nix-nwjs";
-          rev = "main";
-          sha256 = "sha256-WVJk3EvpBRebuwhAYNkVjhYRfTsyWSXvrxvfnSfdgDo=";
-        }; in pkgs.callPackage "${src}/default.nix" {
+        (pkgs.callPackage ./custom_packages/nix-nwjs/default.nix {
           sdk = true;
         })
       ];

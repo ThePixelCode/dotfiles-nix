@@ -4,3 +4,6 @@
 [submodule "custom_packages/zsh-nix-shell"]
 	path = custom_packages/zsh-nix-shell
 	url = https://github.com/ThePixelCode/oh-my-zsh-zsh-nix-shell-nix.git
+[submodule "custom_packages/nix-nwjs"]
+	path = custom_packages/nix-nwjs
+	url = https://github.com/ThePixelCode/nix-nwjs.git
